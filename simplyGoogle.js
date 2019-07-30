@@ -12,14 +12,35 @@ var modalLinkCSS = document.createElement("link");
     $("head").append(modalLinkCSS);
 
 
-var myvar = '<div class="dropdown">'+
-'  <button onclick="myFunction()" class="dropbtn">Dropdown</button>'+
-'  <div id="myDropdown" class="dropdown-content">'+
-'    <a href="#home">Home</a>'+
-'    <a href="#about">About</a>'+
-'    <a href="#contact">Contact</a>'+
-'  </div>'+
-'</div>';
+	var $hideFeed = $('<input id="btn-toggle" type="button" value="TOGGLE FEED" />');
+	$hideFeed.appendTo($("body")); // 2. Append somewhere
+
+	$($hideFeed).click(function() {
+		$("#divFeed").toggle();
+	});
+	
+	var $hideDetails = $('<input id="btn-details" type="button" value="TOGGLE DETAILS" />');
+	$hideDetails.appendTo($("body")); // 2. Append somewhere
+
+	$($hideDetails).click(function() {
+		$("#divDetails").toggle();
+	});
+
+  // HIDE AND SHOW BUTTONS
+	var $hideItem = $('<div class="hideItem"></div>').text("hide");
+	var $showItem = $('<div class="showItem"></div>').text("show");
+
+	$(".feed-item").before($hideItem); //prepend button
+	$(".feed-item").before($showItem); //prepend button
+
+	// $(".feed-item").click(function() {
+	// 	$(this).css("background-color","yellow");
+	// });
+
+	$(".hideItem").click(function() {
+		$(".feed-item", this).css("background-color","yellow");
+	});
+
 	
 
     
