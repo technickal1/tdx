@@ -11,13 +11,13 @@ var modalLinkCSS = document.createElement("link");
     $(modalLinkCSS).attr('href','https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css');
     $("head").append(modalLinkCSS);
 
-document.write( '<div class=\"dropdown\">\n' );
-document.write( '  <button class=\"dropbtn\">Dropdown</button>\n' );
-document.write( '  <div class=\"dropdown-content\">\n' );
-document.write( '    <a href=\"#\">Link 1</a>\n' );
-document.write( '    <a href=\"#\">Link 2</a>\n' );
-document.write( '    <a href=\"#\">Link 3</a>\n' );
-document.write( '  </div>\n' );
-document.write( '</div>' );
+var themeDropdown = '<div class="themeDropdown">'+
+'  <button onclick="myFunction()" class="dropbtn">Dropdown</button>'+
+'  <div id="myDropdown" class="dropdown-content">'+
+'    <a href="#home">Dark Mode</a>'+
+'    <a href="#about">Simply Google</a>'+
+'    <a href="#contact">Details Overload</a>'+
+'  </div>'+
+'</div>';
     
     
