@@ -26,10 +26,11 @@ div#divHeader {
 .panel-default {
 	border: 1px solid #ccc;
 	border-radius: 15px;
+  margin-bottom:8px;
 }
 
 .panel-body {
-	padding: 0px 15px;
+	padding: 0px 12px;
 }
 
 div.panel-heading {
@@ -162,44 +163,47 @@ div#upItemCounts > ul > li:nth-child(2) {
   border:0px;
 }
 
-#upDetails,
-.col-md-7,
-.col-md-5 {
-  display:inline-block;
-	border-radius: 15px;
-  position:sticky;
-  z-index:1;
-  top:100px;
-}
-
-#upDetails {
-  position:sticky;
-  top:100px;
-  z-index:1;
+#upDetails { /* div around divDetails */
+  border:5px solid green;
 }
 
 #divDetails {
 	border-radius: 15px;
-  width: 300px;
   border: 5px solid red;
 }
 
+#divTags {
+  border: 5px solid coral;
+}
+
 .col-md-5 {
-  width: 25%!important;
+  display:none;
+  width:25%;
+  border: 5px solid red;
+  border-radius: 15px;
+  position:sticky; /* need for sticky */
+  z-index:1; /* need for sticky */
+  top:100px; /* need for sticky */
+}
+
+.col-md-7 {
+  display:none;
+  border-radius: 15px;
+  width:75%;
   border: 5px solid red;
 }
 
-.col-md-7,
-.col-md-5 {
-  border: 5px solid red;
+#feed_wrap {
+  width: 60%;
+  float:right;
+  border:5px solid blue;
 }
 
 #divFeed {
+  display:inline;
+  width:50%;
 	border-radius: 15px;
 	padding: 12px;
-  width:50%;
-  margin:0 auto;
-  float:right;
   border: 5px solid red;
 }
 
@@ -209,15 +213,32 @@ div#upItemCounts > ul > li:nth-child(2) {
 	border: 1px solid red;
 	color: #333;
   margin-bottom: 8px;
-  float:right;
 }
 
 #divCustomAttributes {
 	background-color: lightyellow;
-  border-radius: 1rem;
-  position:sticky;
-  z-index:1;
+}
+
+#flex_container {
+  width:98vw;
+  border:5px solid royalblue;
+}
+
+#flex1 {
+  float:left;
+  border:2px solid limegreen;
+  width: 25%;
+}
+#flex2 {
+  display:inline-block;
+  border:2px solid limegreen;
+  width: 50%;
+  margin:0 auto;
+}
+#flex3 {
   float:right;
+  border:2px solid limegreen;
+  width: 25%;
 }
 
 #show_system_items {
@@ -235,16 +256,6 @@ div#upItemCounts > ul > li:nth-child(2) {
 
 .dropdown-menu {
 	letter-spacing: .25px;
-}
-
-.col-md-5,
-.col-sm-5 {
-  width:20%;
-  float:right;
-}
-
-.col-md-7 {
-  width:75%;
 }
 
 #btnTakeTicket,
