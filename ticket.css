@@ -1,0 +1,267 @@
+/** Theme: Simply Google by Nick
+    uses Product Sans Font **/
+/***** TICKET IN NEW WINDOW
+========================================================================
+======================================================================== 
+added by technickal1 *****/
+div#divHeader {
+	background-color: red;
+	/** use important to highlight **/
+}
+
+#thTicket_lblStatus {
+	width: 400px;
+	margin-left: -200px;
+	font-size: 32px;
+	position: relative;
+	font-family: 'Product Sans';
+}
+
+#divDetails,
+#divCustomAttributes,
+#divFeed {
+	border: 1px solid #ccc;
+}
+
+.panel-default {
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+.panel-body {
+	padding: 0px 15px;
+}
+
+div.panel-heading {
+	background-color: white!important;
+	border: 0;
+}
+
+.gutter-left-sm {
+	display: none;
+}
+
+#thTicket_spnTitle {
+	color: #333!important;
+	font-size: 24px;
+	padding-top: 4px;
+  margin-bottom:0;
+  font-weight:bold;
+  font-family:'Product Sans';
+  display:inline-block;
+  min-width: 600px;
+}
+
+#thTicket_spnTitle:before {
+	font-weight: bold;
+	content: "PROBLEM";
+	display: none;
+}
+
+.panel-default:hover,
+#divFeed:hover,
+#divDetails:hover,
+#divDescription:hover,
+#divCustomAttributes:hover,
+#btnComment:hover,
+#btnUpdateTicket:hover {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.feed-entry-actions { /** Comment and Like links **/
+  display:none;
+}
+
+ div#upItemCounts > ul > li {
+  display:none;
+  border: 2px solid coral;
+  float:right;
+}
+
+div#upItemCounts > ul > li:nth-child(2) {
+  display:none;
+/*   display:inline-block; */
+  border: 1px solid green;
+}
+
+.showItem {
+	display: block;
+	text-align: center;
+	color: black;
+	width: 50px;
+	background-color: lightcoral;
+}
+
+.hideItem:hover,
+.showItem:hover {
+	background-color: gray;
+	cursor: pointer;
+}
+
+#btn-details {
+	position: fixed;
+	left: 500px;
+	top: 0px;
+	z-index: 999;
+	width: 150px;
+	height: 50px;
+	color: black;
+}
+
+#btn-custom {
+	position: fixed;
+	left: 500px;
+	top: 0px;
+	z-index: 999;
+	width: 150px;
+	height: 50px;
+	color: black;
+	background-color: pink;
+}
+
+[class="feed-item"] > div > div {
+	/** background-color: yellow; **/
+}
+
+#divHours,
+#divReviewer,
+#divUrgency,
+#divPriority,
+#divType,
+#divService,
+#divSource,
+#divDetails h2 {
+	display: none;
+}
+
+#divAcctDept > div > a,
+#lblDateModified {
+/* 	* font-size: 20px; * */
+}
+
+.disp-group,
+#divCustomAttributes,
+#divDetails {
+	padding: 8px;
+	margin-bottom: 4px;
+}
+
+.gutter-top {
+	margin: 0px;
+}
+
+#divAttribute77363 > div {
+	/** Copy MAC Address **/
+	font-size: 24px;
+	color: orangered;
+}
+
+#divTabHeader {
+  background-color:transparent!important;
+  border:0px;
+}
+
+#upDetails,
+.col-md-7,
+.col-md-5 {
+  display:inline-block;
+	border-radius: 15px;
+  position:sticky;
+  z-index:1;
+  top:100px;
+}
+
+#upDetails {
+  position:sticky;
+  top:100px;
+  z-index:1;
+}
+
+#divDetails {
+	border-radius: 15px;
+  width: 300px;
+  border: 5px solid red;
+}
+
+.col-md-5 {
+  width: 25%!important;
+  border: 5px solid red;
+}
+
+.col-md-7,
+.col-md-5 {
+  border: 5px solid red;
+}
+
+#divFeed {
+	border-radius: 15px;
+	padding: 12px;
+  width:50%;
+  margin:0 auto;
+  float:right;
+  border: 5px solid red;
+}
+
+#divDescription {
+	border-radius: 1rem; /** test with rem (2rem) **/
+	padding: 8px;
+	border: 1px solid red;
+	color: #333;
+  margin-bottom: 8px;
+  float:right;
+}
+
+#divCustomAttributes {
+	background-color: lightyellow;
+  border-radius: 1rem;
+  position:sticky;
+  z-index:1;
+  float:right;
+}
+
+#show_system_items {
+  color: #ccc;
+  outline:none;
+}
+
+.nav {
+  margin-left:10px;
+}
+
+.nav-tabs {
+  border:0px;
+}
+
+.dropdown-menu {
+	letter-spacing: .25px;
+}
+
+.col-md-5,
+.col-sm-5 {
+  width:20%;
+  float:right;
+}
+
+.col-md-7 {
+  width:75%;
+}
+
+#btnTakeTicket,
+#divReassignTicket,
+#divUnassignTicket,
+#divChangeClassification,
+#divCreateParentTicket,
+#divSetParent,
+#divForward,
+#divCreateTemplate,
+#divCopyTicket,
+#divAssignWorkflow {
+	display: none!important;
+}
+
+/** LIGHTEN UNIMPORTANT TEXT IN TICKET FEED **/
+
+.media-heading {
+   font-size: 2rem;
+}
