@@ -1,0 +1,506 @@
+/***** ALL OF TEAMDYNAMIX URLS
+*****/
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+   
+* {
+  font-family: 'Product Sans';
+}
+
+body {
+    font-family: 'Product Sans', 'sans-serif'!important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    /** background-color: #454c5c !important; used for dark mode
+    color: #d3dae3 !important; } used for dark mode **/
+}
+
+#btnSignIn,
+.form-control.input-lg {
+	border-radius:9rem!important;
+	margin-top: .5rem;
+}
+
+#theBoxDiv {
+  margin: 0 auto;
+  text-align:center;
+}
+
+#theBox {
+  border-radius: 15px;
+  width: 25vw;
+  min-width: 400px;
+  height:4vh;
+  border: 1px solid #bbb;
+  padding: 12px;
+}
+
+#theBox:focus {
+  outline:none;
+}
+
+html {
+  overflow: auto;
+}
+
+/** SCROLLBAR COOLNESS **/
+::-webkit-scrollbar { /* width */
+  width: 20px;
+  border-radius:15px;
+}
+
+::-webkit-scrollbar-track { /* Track */
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track:hover { /* Track on hover */ 
+  border-radius: 15px;
+  border:1px dotted #ccc;
+}
+ 
+::-webkit-scrollbar-thumb { /* Handle */
+  background: #ccc; 
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover { /* Handle on hover */
+  background: #333;
+  border: 2px solid #1dacd6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+/** SCROLLBAR END **/
+
+#theBoxSearch {
+  border: 1px solid #bbb!important;
+  border-radius:15px!important;
+  color: #333;
+  letter-spacing: .25px;
+  padding: 4px;
+  margin: 4px;
+  outline:none;
+}
+
+/***** MAIN PAGE table w/ tickets - ModuleContent *****/
+
+.pull-right {
+	float:right;
+	padding: 1rem;
+}
+
+.pull-left {
+	display:inline-block;
+	padding: .5rem;
+	padding-top:0;
+	margin-bottom:0!important;
+}
+
+.ModuleContent > table > thead > tr > th {
+/* 	border: 5px solid red!important; */
+}
+
+.ModuleContent > table > thead > tr > th > a {
+	text-decoration:none;
+/* 	background-color:orange; */
+	color:#333!important;
+	font-size: 1.2rem;
+}
+
+.ModuleContent > table > thead > tr > th > a:after {
+	content:" ⇅";
+	color: #bbb;
+}
+
+.ModuleContent > table {
+/* 	border:2px solid coral; */
+	padding-left:.5rem;
+	padding-right:.5rem;
+	margin-top:0px;
+}
+
+.ModuleContent > table > tbody > tr {
+/* 	background-color : red!important; */
+}
+
+.ModuleContent > table > tbody > tr > td:nth-child(1) { /** sets height and font for status **/
+	font-size:.9rem;
+	height: 30px;
+	font-weight:bold;
+	letter-spacing:.5px;
+}
+
+.ModuleContent > table > tbody > tr > td:nth-child(1) { /** Status Column **/
+/* 	background-color: limegreen; */
+/* 	color:white; */
+	text-align:center;
+	width: 12%;
+}
+
+.ModuleContent > table > tbody > tr > td:nth-child(2) { /** ID Column **/
+/* 	background-color: coral; */
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+}
+
+.ModuleContent > table > tbody > tr > td > a:nth-child(1) { /** all links in table **/
+/* 	border: 2px solid green; */
+	text-decoration:none;
+/* 	text-transform:capitalize; */
+	color: #333;
+}
+
+.ModuleContent > table > tbody > tr:nth-of-type(odd) {
+	background-color: #eee;
+/* 	border-top: #eee; */
+}
+
+.ModuleContent > table > tbody > tr > td:nth-child(3) { /** Title Column **/
+/* 	background-color: pink;  */
+	text-decoration:none;
+}
+
+.ModuleContent > table > tbody > tr > td:nth-child(4) { /** Modified Column **/
+/* 	background-color: royalblue; */
+	width: 15%;
+}
+
+.ModuleContent > table > tbody > tr > td:nth-child(5) { /** Prim Resp Column **/
+/* 	background-color: purple; */
+	text-align:center;
+}
+
+hilight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.btn-primary {
+    border: 1px solid #bbb!important;
+    border-radius:15px!important;
+    background-color: transparent!important;
+    color: #333;
+    letter-spacing: .25px;
+}
+
+#btnActions:focus {
+    border: 0 !important;
+}
+
+#btnActions:focus {
+    border: 1px solid #1dacd6  !important;
+}
+
+.dropdown-menu {
+    border-radius: var(--rounded);
+    padding-top:8px;
+    padding-bottom:8px;
+    letter-spacing:.25px;
+}
+
+li > .btn.btn-primary.btn-sm:focus,
+li > .btn.btn-primary.btn-sm:active { /** nav buttons remove white text **/
+   border:1px solid #bbb!important;
+   color: #333!important;
+   outline:none!important;
+}
+
+.btn-primary:hover {
+    border: 1px solid #1dacd6  !important; /** bright cerulean color **/
+    border-radius:15px!important;
+    background-color: transparent!important;
+    color:inherit;
+}
+
+li:active,
+li:focus {
+    outline:none;
+}
+
+.btn-danger {
+    border: 1px solid red !important;
+    border-radius:15px!important;
+    background-color: red!important;
+}
+
+.btn.btn-default {
+/*     border: 5px solid blue !important; */
+/*     background-color:lightblue; */
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+}
+
+.select2-choice,
+.select2-choices,
+.select2-search-choice,
+.alert,
+div.border,
+.light-gray-bg,
+.input-group-btn,
+.panel-heading { /** requester panel **/
+    border-radius: 15px !important;
+}
+
+.light-gray-bg,
+.form-control {
+    border-radius: 15px !important;
+}
+
+textarea {
+    border-radius: 0px !important;
+}
+
+.border {
+    border-radius: 0px 0px 15px 15px !important;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+  
+/** TESTING TESTING TESTING TESTING TESTING **/
+/**                                         **/
+
+.desktop-module { /** https://css-tricks.com/gradient-borders-in-css/ **/
+	border-radius: 15px;
+	border: 5px solid;
+  border-image-source: linear-gradient(135deg, rgb(29,172,214), rgb(152,255,72));
+  border-image-slice: 2;
+	margin-top: 1%!important;
+	box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	width: 60vw;
+	margin: 0 auto;
+}
+
+.module-header {
+	background-color:transparent!important;
+}
+
+#clipboard {
+   cursor: pointer;
+   font-size: 18px;
+   display: inline-block;
+}
+
+#clipboardTooltip {
+   display: inline-block;
+}
+
+.modal { /** show where modal class elements are **/
+	color: red;
+	font-weight:bold;
+}
+
+#ticket_iframe {
+	border: 2px solid orangered;
+	width:5vw;
+	margin:0 auto;
+	margin-top:-10px;
+	height:90vh;
+	box-shadow:0 10px 30px rgba(0,0,0,0.3), 0 10px 50px rgba(0,0,0,0.5);
+	border-radius:1rem;
+	padding:8px;
+	background-color:white;
+}
+
+/***** NEW JSON TABLE!! *****/
+#new_table {
+/* 	border: 2px solid #ccc; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  width:90vw;
+  margin: 0 auto;
+}
+
+#new_table > tbody > tr {
+  border: 1px dotted #ccc;
+}
+
+#new_table > tbody > tr:hover {
+  background: rgba(51,51,51,0.1);
+  cursor:pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+#center_the_search {
+  /*border: 2px solid limegreen;*/
+  width: 100%;
+  text-align:center;
+}
+
+#json_live_search {
+  margin-top: 12px!important;
+  margin-bottom: 12px!important;
+  border:0px solid green;
+  width:400px;
+/*   display:inline-block; */
+}
+
+#json_live_search::placeholder {
+  color: #ccc;
+  text-align:center;
+}
+
+#json_live_search:focus {
+  font-size:2rem;
+  outline:none;
+  text-align:center;
+  color:rgb(29,172,214);
+}
+
+#group_dropdown {
+  border:1px solid #333;
+  width:150px;
+  display:inline-block;
+  border-radius:4rem;
+}
+
+#new_table > thead {
+  text-align:center;
+  color:#bbb;
+  font-size:1.1em;
+}
+
+#new_table > thead > tr > td:nth-child(1) { /* Status Heading */
+  width: 2%;
+} 
+
+#new_table > tbody > tr > td:nth-child(1) { /* Status column - needs to be on it's own */
+  font-size:.8em;
+} 
+
+#new_table > thead > tr > td:nth-child(3) { /* Title Heading */
+  float:left;
+} 
+
+#new_table > thead > tr > td:nth-child(2) { /* ID Heading */
+  width: 10%;
+}
+
+#new_table > thead > tr > td:nth-child(4), /* Modified Heading */
+#new_table > thead > tr > td:nth-child(5) { /* Prim Resp Heading */
+  width: 12.5%;
+} /* need to be 25% together */
+
+#new_table > tbody {
+  color:#333;
+  font-size:1em;
+}
+
+
+
+#new_table > tbody > tr > td:nth-child(2) { /* ID */
+  font-weight:bold;
+} 
+
+#new_table > tbody > tr > td:nth-child(3) { /* Title */
+  text-align:left;
+} 
+
+#new_table > tbody > tr:first-child {
+  display:none;
+}
+
+#new_table > tbody > tr > td{
+  vertical-align:middle;
+  text-align:left;
+  height:50px;
+}
+
+/** STATUS BORDERS ON LEFT OF ROWS **/
+
+#new_table > tbody > tr > td[data-text='In Process'] {
+  border-left: 5px solid royalblue;
+}
+
+#new_table > tbody > tr > td[data-text='New'] {
+  border-left: 5px solid limegreen;
+}
+
+#new_table > tbody > tr > td[data-text='Open'] {
+  border-left: 5px solid orangered;
+}
+
+#new_table > tbody > tr > td[data-text*='On Hold'] {
+  border-left: 5px solid gray;
+}
+
+/** [data-text] inline block colors
+/* [data-text='New'],
+[data-text='Open'],
+[data-text='In Process'],
+[data-text*="On Hold"] {  
+  display:inline;
+  border-radius:4rem;
+  text-transform: lowercase;
+  line-height:50px;
+  padding:4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  color:whitesmoke;
+} */ 
+/* [data-text='New'] {
+  background:limegreen;
+  display:inline;
+  margin-left:35%;
+  border: 1px solid lightgreen;
+} */
+/* [data-text='Open'] {
+  background:orangered;
+  margin-left: 53px;
+  border: 1px solid orange;
+} */
+/* [data-text='In Process'] {
+  background:royalblue;
+  margin-left: 40px;
+  border: 1px solid lightblue;
+} */
+/* [data-text*="On Hold"] {
+  background:gray;
+  margin-left: 48px;
+  color:whitesmoke!important;
+  border: 1px solid lightgray;
+} */
+
+[data-text*="On Hold"]:hover {
+  cursor:pointer;
+}
+
+#new_table_ticket_iframe {
+  display:none;
+  border: 0px solid #ccc;
+	width:99%;
+  margin:0 auto;
+	height:85vh;
+  overflow:hidden;
+}
+
+#new_table_ticket_iframe_close {
+  display:none;
+  background: #ccc;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#new_table_ticket_iframe_close:hover {
+  background:red;
+  color:white;
+}
+
+.container-fluid {
+  margin:0;
+}
+
+
