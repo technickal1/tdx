@@ -4,6 +4,15 @@
 ========================================================================
 ======================================================================== 
 added by technickal1 *****/
+
+/** CSS VARIABLES **/
+:root{
+  --light-border: #ccc; /* var(--light-border); */
+  --round-border:   1rem; /* var(--round-border); */
+  --button-shadow:  0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* box-shadow: var(--button-shadow); */
+  --button-blend:   all 0.3s cubic-bezier(.25, .8, .25, 1); /* transition: var(--button-blend); */
+}
+
 div#divHeader {
 	background-color: red;
 	/** use important to highlight **/
@@ -18,14 +27,13 @@ div#divHeader {
 }
 
 #divDetails,
-#divCustomAttributes,
-#divFeed {
-	border: 1px solid #ccc;
+#divCustomAttributes{
+	border: 1px solid var(--light-border);
 }
 
 .panel-default {
-	border: 1px solid #ccc;
-	border-radius: 15px;
+	border: 1px solid var(--light-border);
+	border-radius: var(--round-border);
   margin-bottom:8px;
 }
 
@@ -43,31 +51,45 @@ div.panel-heading {
 }
 
 #thTicket_spnTitle {
-	color: #333!important;
 	font-size: 24px;
 	padding-top: 4px;
   margin-bottom:0;
   font-weight:bold;
   font-family:'Product Sans';
-  display:inline-block;
-  min-width: 600px;
+  min-width: 50vw;
 }
 
 #thTicket_spnTitle:before {
 	font-weight: bold;
-	content: "PROBLEM";
-	display: none;
+	content: "🎫 ";
+/* 	display: none; */
+}
+
+#mdl_system_button {
+  background:transparent;
+  border-radius: 4rem;
+  border:1px solid #bbb;
+  display: flex;
+  height:32px;
+  margin:4;
+  
+  outline:none;
+}
+
+#mdl_system_button:hover {
+  border:1px solid orangered;
+  box-shadow: var(--button-shadow);
+  transition: var(--button-blend);
 }
 
 .panel-default:hover,
-#divFeed:hover,
 #divDetails:hover,
 #divDescription:hover,
 #divCustomAttributes:hover,
 #btnComment:hover,
 #btnUpdateTicket:hover {
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+	box-shadow: var(--button-shadow);
+  transition: var(--button-blend);
 }
 
 .feed-entry-actions { /** Comment and Like links **/
@@ -164,23 +186,23 @@ div#upItemCounts > ul > li:nth-child(2) {
 }
 
 #upDetails { /* div around divDetails */
-  border:5px solid green;
+/*   border:5px solid green; */
 }
 
 #divDetails {
-	border-radius: 15px;
-  border: 5px solid red;
+	border-radius: 1rem;
+/*   border: 5px solid red; */
 }
 
 #divTags {
-  border: 5px solid coral;
+/*   border: 5px solid coral; */
 }
 
 .col-md-5 {
   display:none;
   width:25%;
-  border: 5px solid red;
-  border-radius: 15px;
+/*   border: 5px solid red; */
+  border-radius: 1rem;
   position:sticky; /* need for sticky */
   z-index:1; /* need for sticky */
   top:100px; /* need for sticky */
@@ -188,9 +210,9 @@ div#upItemCounts > ul > li:nth-child(2) {
 
 .col-md-7 {
   display:none;
-  border-radius: 15px;
+  border-radius: 1rem;
   width:75%;
-  border: 5px solid red;
+/*   border: 5px solid red; */
 }
 
 #feed_wrap {
@@ -201,10 +223,7 @@ div#upItemCounts > ul > li:nth-child(2) {
 
 #divFeed {
   display:inline;
-  width:50%;
-	border-radius: 15px;
-	padding: 12px;
-  border: 5px solid red;
+  border:0;
 }
 
 #divDescription {
@@ -216,29 +235,48 @@ div#upItemCounts > ul > li:nth-child(2) {
 }
 
 #divCustomAttributes {
+  border-radius:1rem;
 	background-color: lightyellow;
 }
 
 #flex_container {
   width:98vw;
-  border:5px solid royalblue;
+  padding: 4px;
+/*   border:5px solid royalblue; */
 }
 
 #flex1 {
+  margin-left:10px;
+  margin-right:10px;
   float:left;
-  border:2px solid limegreen;
-  width: 25%;
+/*   border:2px solid limegreen; */
+  width: 20vw;
+  position:sticky; /* need for sticky */
+  z-index:1; /* need for sticky */
+  top:100px; /* need for sticky */
 }
 #flex2 {
+  padding-left:1vw;
+  padding-right:1vw;
+  border-radius:1rem;
   display:inline-block;
-  border:2px solid limegreen;
-  width: 50%;
-  margin:0 auto;
+  box-sizing: border-box;
+/*   border:2px solid limegreen; */
+  width: 50vw;
+  border: 1px solid #ccc;
 }
 #flex3 {
   float:right;
-  border:2px solid limegreen;
-  width: 25%;
+/*   border:2px solid limegreen; */
+  width: 23vw;
+  position:sticky; /* need for sticky */
+  z-index:1; /* need for sticky */
+  top:100px; /* need for sticky */
+}
+
+#flex2:hover {
+  box-shadow: var(--button-shadow);
+  transition: var(--button-blend);
 }
 
 #show_system_items {
