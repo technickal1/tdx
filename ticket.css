@@ -1,58 +1,99 @@
-/** Theme: Simply Google by Nick
-    uses Product Sans Font **/
-/***** TICKET IN NEW WINDOW
-========================================================================
-======================================================================== 
-added by technickal1 *****/
 
-/** CSS VARIABLES **/
-:root{
-  --light-border: #ccc; /* var(--light-border); */
-  --round-border:   1rem; /* var(--round-border); */
-  --button-shadow:  0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* box-shadow: var(--button-shadow); */
-  --button-blend:   all 0.3s cubic-bezier(.25, .8, .25, 1); /* transition: var(--button-blend); */
+/*****
+========================================================================
+  TICKET IN NEW WINDOW
+========================================================================
+*****/
+
+/** Theme: Dark Nite **/
+
+body {
+  padding-top:100px;
 }
 
-div#divHeader {
-	background-color: red;
-	/** use important to highlight **/
+#divHeader {
+/* 	background-color: red!important; */
+}
+
+.feed-item-text {
+  color: var(--light-text);
 }
 
 #thTicket_lblStatus {
-	width: 400px;
-	margin-left: -200px;
+  padding-top:3%;
+  width:500px;
+  float:right;
 	font-size: 32px;
-	position: relative;
-	font-family: 'Product Sans';
+	font-family: var(--google);
+	letter-spacing:var(--letters);
+	word-spacing:.02em;
+	color: var(--in-process)!important;
 }
 
 #divDetails,
 #divCustomAttributes{
+	color:var(--light-text)!important;
 	border: 1px solid var(--light-border);
 }
 
 .panel-default {
+	background-color:var(--dark-bg)!important;
 	border: 1px solid var(--light-border);
-	border-radius: var(--round-border);
+	border-radius: var(--gmail-response);
   margin-bottom:8px;
 }
 
-.panel-body {
-	padding: 0px 12px;
+.panel-body { /* condense panels */
+	background-color:var(--dark-bg)!important;
+	padding: 0px 12px!important;
 }
 
 div.panel-heading {
-	background-color: white!important;
-	border: 0;
+	background-color:var(--dark-bg)!important;
+	border:0px!important;
 }
 
-.gutter-left-sm {
-	display: none;
+.block-container .infoSection a {
+	color:var(--clear)!important;
+}
+
+.block-container {
+	margin:0px!important;
+	margin-bottom:4px!important;
+	padding:8px!important;
+}
+
+.infoSection { 
+	display:none;
+	font-size:1.2rem;
+}
+
+.block-container .fileInfo {
+	float:right!important;
+}
+
+.block-container:hover .infoSection,
+.block-container:hover { /* includes date */
+	display:flex;
+	background-color:var(--darker-bg)!important;
+}
+
+.fa.fa-desktop { display:none!important; } /* desktop icon */ 
+
+.block-container .infoSection i { /* trash and image icons */
+	font-size:2.6rem;
+	margin-right:-4px!important;
+	margin-left:-4px!important;
+	padding:0px!important;
+}
+
+.block-container .infoSection i:hover {
+	color:orangered!important;
 }
 
 #thTicket_spnTitle {
-	font-size: 24px;
-	padding-top: 4px;
+	font-size: 28px;
+	padding-top:1%;
   margin-bottom:0;
   font-weight:bold;
   font-family:'Product Sans';
@@ -60,24 +101,25 @@ div.panel-heading {
 }
 
 #thTicket_spnTitle:before {
-	font-weight: bold;
-	content: "🎫 ";
+	color: royalblue;
+	content: "REQUEST: ";
 /* 	display: none; */
 }
 
 #mdl_system_button {
+  color:#ccc;
   background:transparent;
   border-radius: 4rem;
   border:1px solid #bbb;
   display: flex;
   height:32px;
   margin:4;
-  
   outline:none;
 }
 
 #mdl_system_button:hover {
   border:1px solid orangered;
+  color:orangered;
   box-shadow: var(--button-shadow);
   transition: var(--button-blend);
 }
@@ -122,31 +164,6 @@ div#upItemCounts > ul > li:nth-child(2) {
 	cursor: pointer;
 }
 
-#btn-details {
-	position: fixed;
-	left: 500px;
-	top: 0px;
-	z-index: 999;
-	width: 150px;
-	height: 50px;
-	color: black;
-}
-
-#btn-custom {
-	position: fixed;
-	left: 500px;
-	top: 0px;
-	z-index: 999;
-	width: 150px;
-	height: 50px;
-	color: black;
-	background-color: pink;
-}
-
-[class="feed-item"] > div > div {
-	/** background-color: yellow; **/
-}
-
 #divHours,
 #divReviewer,
 #divUrgency,
@@ -156,11 +173,6 @@ div#upItemCounts > ul > li:nth-child(2) {
 #divSource,
 #divDetails h2 {
 	display: none;
-}
-
-#divAcctDept > div > a,
-#lblDateModified {
-/* 	* font-size: 20px; * */
 }
 
 .disp-group,
@@ -182,24 +194,18 @@ div#upItemCounts > ul > li:nth-child(2) {
 
 #divTabHeader {
   background-color:transparent!important;
-  border:0px;
-}
-
-#upDetails { /* div around divDetails */
-/*   border:5px solid green; */
+  border-bottom:0;
 }
 
 #divDetails {
 	border-radius: 1rem;
-/*   border: 5px solid red; */
 }
 
 #divTags {
-/*   border: 5px solid coral; */
 }
 
 .col-md-5 {
-  display:none;
+/*   display:none; */
   width:25%;
 /*   border: 5px solid red; */
   border-radius: 1rem;
@@ -209,16 +215,10 @@ div#upItemCounts > ul > li:nth-child(2) {
 }
 
 .col-md-7 {
-  display:none;
+/*   display:none; */
   border-radius: 1rem;
   width:75%;
 /*   border: 5px solid red; */
-}
-
-#feed_wrap {
-  width: 60%;
-  float:right;
-  border:5px solid blue;
 }
 
 #divFeed {
@@ -227,16 +227,28 @@ div#upItemCounts > ul > li:nth-child(2) {
 }
 
 #divDescription {
-	border-radius: 1rem; /** test with rem (2rem) **/
-	padding: 8px;
-	border: 1px solid red;
-	color: #333;
+  background:orangered;
+	border:0px!important;
+  color:var(--light-text);
+	border-radius: var(--gmail-response)!important;
   margin-bottom: 8px;
+  font-size:1.8rem;
+	padding:8px!important;
+}
+
+#divDescription h2 {
+  font-family: 'Product Sans';
+  color:var(--light-text);
+  font-weight:bold;
+  border-bottom:0;
+  margin:0!important;
+  letter-spacing: var(--letters);
 }
 
 #divCustomAttributes {
-  border-radius:1rem;
+  border-radius:var(--gmail-response)!important;
 	background-color: lightyellow;
+	color:var(--mid-text)!important;
 }
 
 #flex_container {
@@ -249,11 +261,10 @@ div#upItemCounts > ul > li:nth-child(2) {
   margin-left:10px;
   margin-right:10px;
   float:left;
-/*   border:2px solid limegreen; */
   width: 20vw;
   position:sticky; /* need for sticky */
   z-index:1; /* need for sticky */
-  top:100px; /* need for sticky */
+  top:14vh; /* need for sticky */
 }
 #flex2 {
   padding-left:1vw;
@@ -261,17 +272,15 @@ div#upItemCounts > ul > li:nth-child(2) {
   border-radius:1rem;
   display:inline-block;
   box-sizing: border-box;
-/*   border:2px solid limegreen; */
   width: 50vw;
   border: 1px solid #ccc;
 }
 #flex3 {
   float:right;
-/*   border:2px solid limegreen; */
   width: 23vw;
   position:sticky; /* need for sticky */
   z-index:1; /* need for sticky */
-  top:100px; /* need for sticky */
+  top:14vh; /* need for sticky */
 }
 
 #flex2:hover {
@@ -284,17 +293,9 @@ div#upItemCounts > ul > li:nth-child(2) {
   outline:none;
 }
 
-.nav {
-  margin-left:10px;
-}
-
-.nav-tabs {
-  border:0px;
-}
-
-.dropdown-menu {
-	letter-spacing: .25px;
-}
+.nav {}
+.nav-tabs {	border:0px;	}
+.dropdown-menu {	letter-spacing: var(--letters);	}
 
 #btnTakeTicket,
 #divReassignTicket,
@@ -309,8 +310,6 @@ div#upItemCounts > ul > li:nth-child(2) {
 	display: none!important;
 }
 
-/** LIGHTEN UNIMPORTANT TEXT IN TICKET FEED **/
-
-.media-heading {
-   font-size: 2rem;
+.control-label {
+	color: var(--light-text);
 }
