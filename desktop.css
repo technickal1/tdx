@@ -1,0 +1,208 @@
+
+/*****
+========================================================================
+  MAIN DESKTOP PAGE
+========================================================================
+*****/
+
+/** Theme: Dark Nite **/
+
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+   
+* {
+  font-family: 'Product Sans';
+}
+
+:root {
+  --darker-bg: #131313;
+  --dark-bg: #282828;
+  --table-link: #D4D4D4;
+  --light-text: #e8e8e8;
+  --blue-hover: #1dacd6;
+	--mid-text: #4e4e4e;
+	--google: 'Product Sans';
+	--in-process: orangered;
+	--letters: .02em;
+	--round-button: border-radius:1rem;
+	--clear: transparent;
+}
+
+a {
+	color:var(--blue-hover)!important;
+}
+
+button {
+	background-color: var(--clear)!important;
+	border: 1px solid var(--dark-bg)!important;
+}
+
+button:hover {
+	border: 1px solid var(--blue-hover)!important;
+}
+
+.desktop-module {
+	border:0px!important;
+	width: 55vw!important;
+	margin:0 auto!important;
+}
+
+.desktop-module.panel {
+	margin-top:2vh!important;
+}
+
+.ModuleContent thead tr {
+	display:none;
+}
+
+.ModuleContent {
+/* 	border-top: 5px solid red!important; */
+}
+
+.TDGridHeader th {
+	border:0px!important;
+}
+
+.ModuleContent table {
+	font-size:.9em!important;
+	border-top:0px!important;
+	border-collapse:separate!important; 
+  border-spacing: 0 .1em!important; /* .2 w/box shadow or .1 ONLY */
+}
+
+.panel-heading:hover + .ModuleContent thead tr,
+.ModuleContent thead tr:hover {
+	display:table-row;
+}
+
+body {
+	background-color:var(--darker-bg)!important;
+}
+
+.ModuleContent thead tr {
+	background-color:var(--darker-bg)!important;
+	border:0px!important;
+	text-transform:uppercase;
+}
+
+.ModuleContent tbody tr td {
+	border: 0px solid red!important;
+	vertical-align:middle!important;
+}
+
+.ModuleContent tbody tr {
+	background-color: var(--dark-bg)!important;
+	border: 1px solid var(--mid-text)!important;
+	height:50px!important;
+}
+
+.ModuleContent tbody tr:hover {
+	cursor:pointer;
+	box-shadow: rgba(29,172,214,.5) 1px 1px 1px 0px inset, rgba(29,172,214,1) 1px 1px 1px 0px !important;
+}
+
+.nav > li > a:hover {
+  background-color: orange !important; }
+
+.tdbar .btn {
+  background-color: transparent !important; }
+  .tdbar .btn:hover {
+    background-color: var(--blue-hover) !important;
+    text-decoration: none !important; }
+
+.tdbar-settings .btn:hover {
+  background-color: transparent !important;
+  text-decoration: none !important; }
+
+.sortable-item .nav > li > a:hover,
+#upItemCounts .nav > li > a:hover {
+  background-color: transparent !important; }
+
+.navbar a,
+.navbar button,
+.navbar button span,
+.navbar .btn,
+.navbar .btn-primary,
+#divHeader h1,
+.thTicket_spnTitle,
+#upItemCounts .nav,
+.organization-link a,
+.tdbar button,
+.tdbar button span,
+.fa {
+  color: #d3dae3 !important; }
+
+.feed-item,
+.sortable-iitem,
+.report-viewer,
+.ui-tabs-active .ui-tabs-anchor,
+.sortable-item .font-md {
+  color: #6b6f79 !important; }
+
+#divHeader,
+#divTabHeader,
+#tabs,
+#tabsList,
+.dropdown-menu {
+  background-color: var(--darker-bg) !important;
+  border-color: var(--dark-bg) !important; }
+
+.ui-tabs-nav li,
+.ui-tabs-nav li a,
+.nav-tabs li,
+.nav-tabs li a {
+  border: none !important; }
+
+.panel {
+  border-color: #454c5c !important; }
+  
+table > tbody {
+  color:var(--light-text)!important;
+  font-size:1.2em;
+}
+
+.TDAlternatingRow {
+  background-color: var(--dark-bg)!important;
+  color:var(--light-text)!important;
+}
+
+.ModuleContent {
+  background-color: var(--darker-bg) !important;
+  color: whitesmoke !important; }
+  .ModuleContent a .fa, .ModuleContent a:link, .ModuleContent a:visited, .ModuleContent a:active {
+    color: var(--light-text) !important; }
+  .ModuleContent a:hover {
+    color: var(--blue-hover) !important; }
+  .ModuleContent .nav-pills li:hover,
+  .ModuleContent .nav-tabs li:hover {
+    color: var(--blue-hover) !important; }
+
+.sortable-item,
+.feed-item {
+  border-bottom: 1px solid #949494 !important; 
+}
+
+.feed-reply {
+  background-color: #f2f4f7 !important;
+  border-color: #90939b !important; }
+
+.profile-image,
+.profile-image img {
+  border-radius: 50% !important;
+  height: 60px !important;
+  object-fit: cover !important;
+  width: 60px !important; }
+
+.panel-heading {
+  color:var(--light-text)!important;
+  background-color:var(--darker-bg)!important;
+	padding-left:8px!important;
+}
+.panel-heading h4 {
+	font-family: 'Product Sans';
+	letter-spacing: .02em;
+}
